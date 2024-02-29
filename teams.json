@@ -1,0 +1,45 @@
+[
+    {
+        "id": "t-001",
+        "name": "Manchester City",
+        "Manager": "Josep Guardiola",
+        "teamLogoUrl": "",
+        "createDate": "1894-11-13",
+        "League": "Premier League"
+    },
+    {
+        "id": "t-002",
+        "name": "Chelsea",
+        "Manager": "BOB Bobkes",
+        "teamLogoUrl": "",
+        "createDate": "1850-09-05",
+        "League": "Premier League"
+    },
+    {
+        "id": "t-003",
+        "name": "Manchester United",
+        "Manager": "Erik ten Hag",
+        "teamLogoUrl": "",
+        "createDate": "1875-02-13",
+        "League": "Premier League"
+    },
+    {
+        "id": "t-004",
+        "name": "Paris Saint Germain",
+        "Manager": "Luis Enrique",
+        "teamLogoUrl": "",
+        "createDate": "1855-08-08",
+        "League": "Ligue 1"
+    },
+    {
+        "id": "t-006",
+        "name": "Liverpool",
+        "Manager": "Jürgen Klopp",
+        "teamLogoUrl": "",
+        "createDate": "1850-09-05",
+        "League": "Premier League"
+    }
+
+
+
+]
