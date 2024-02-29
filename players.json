@@ -1,0 +1,212 @@
+[  
+    
+        {
+            "id": "p-001",
+            "name": "Christiano Ronaldo",
+            "position": "lw",
+            "age": 35,
+            "Playing": true,
+            "birthDate": "1987-04-21",
+            "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/Cristiano_Ronaldo.jpg" ,
+            "rating": 89,
+            "trophies": ["FIFA-Worldcup"],
+            "BirthPlace": "Portugal" ,
+            "team": {
+                "id": "t-001",
+                "name": "Manchester City",
+                "Manager": "Josep Guardiola",
+                "teamLogoUrl": "",
+                "createDate": "1894-11-13",
+                "League": "Premier League"
+            }
+        },
+
+        {
+            "id": "p-002",
+            "name": "Diego Maradona",
+            "position": " cb",
+            "age": 50,
+            "Playing": true,
+            "birthDate": "1970-06-15",
+            "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/maradona.jpg" ,
+            "rating": 92,
+            "trophies": ["FIFA-Worldcup"],
+            "BirthPlace": "Argentine" ,
+            "team": {
+                "id": "t-002",
+                "name": "Chelsea",
+                "Manager": "BOB Bobkes",
+                "teamLogoUrl": "",
+                "createDate": "1850-09-05",
+                "League": "Premier League"
+                }
+        },
+
+        {
+            "id": "p-003",
+            "name": "Romario",
+            "position": "cm",
+            "age": 40,
+            "Playing": true,
+            "birthDate": "1980-05-21",
+            "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/Romario.jpg" ,
+            "rating": 86,
+            "trophies": ["FIFA-Worldcup"],
+            "BirthPlace": "Brazil" ,
+            "team": {
+                "id": "t-003",
+                "name": "Manchester United",
+                "Manager": "Erik ten Hag",
+                "teamLogoUrl": "",
+                "createDate": "1875-02-13",
+                "League": "Premier League"
+                }
+        },
+        
+        {
+            "id": "p-004",
+            "name": "Pelé",
+            "position": "st",
+            "age": 37,
+            "Playing": true,
+            "birthDate": "1987-05-21",
+            "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/pele.jpg" ,
+            "rating": 93,
+            "trophies": ["FIFA-Worldcup"],
+            "BirthPlace": "Brazil" ,
+            "team": {
+                "id": "t-004",
+                "name": "Paris Saint Germain",
+                "Manager": "Luis Enrique",
+                "teamLogoUrl": "",
+                "createDate": "1855-08-08",
+                "League": "Ligue 1"
+            }
+        },
+        
+        {
+            "id": "p-005",
+            "name": "Erling Haaland",
+            "position": "st",
+            "age": 26,
+            "Playing": true,
+            "birthDate": "1995-12-21",
+            "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/haaland.jpg" ,
+            "rating": 90,
+            "trophies": ["FIFA-Worldcup"],
+            "BirthPlace": "Sweden" ,
+            "team": {
+                "id": "t-005",
+                "name": "Manchester City",
+                "Manager": "Josep Guardiola",
+                "teamLogoUrl": "",
+                "createDate": "1894-11-13",
+                "League": " Premier League"
+            }
+        },
+
+        {
+            "id": "p-006",
+            "name": "Mohamed Salah",
+            "position": " rw",
+            "age": 27,
+            "Playing": true,
+            "birthDate": "1997-07-23",
+            "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/salah.jpg" ,
+            "rating": 91,
+            "trophies": ["FIFA-Worldcup"],
+            "BirthPlace": "Egypt" ,
+            "team": {
+                "id": "t-006",
+                "name": "Liverpool",
+                "Manager": "Jürgen Klopp",
+                "teamLogoUrl": "",
+                "createDate": "1850-09-05",
+                "League": "Premier League"
+            }
+        },
+
+        {
+            "id": "p-007",
+            "name": "Jorginho",
+            "position": " cb",
+            "age": 32,
+            "Playing": true,
+            "birthDate": "1992-11-09",
+            "imageUrl":"https://github.com/zakarap/Webontwikkeling-images/blob/main/Jorginho%20.jpg"  ,
+            "rating": 85,
+            "trophies": ["FIFA-Worldcup"],
+            "BirthPlace": "Brazil" ,
+            "team": {
+                "id": "t-007",
+                "name": "Chelsea",
+                "Manager": "BOB Bobkes",
+                "teamLogoUrl": "",
+                "createDate": "1850-09-05",
+                "League": "Premier League"
+                }
+        },
+        
+        {
+            "id": "p-008",
+            "name": "Lionel Messi",
+            "position": "lw",
+            "age": 37,
+            "Playing": true,
+            "birthDate": "1987-05-21",
+            "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/Lionel%20Messi.jpg" ,
+            "rating": 94,
+            "trophies": ["FIFA-Worldcup"],
+            "BirthPlace": "Argentine" ,
+            "team": {
+                "id": "t-008",
+                "name": "Paris Saint Germain",
+                "Manager": "Luis Enrique",
+                "teamLogoUrl": "",
+                "createDate": "1855-08-08",
+                "League": "Ligue 1"
+            }
+        },
+
+        {
+            "id": "p-009",
+            "name": "Zinedine Zidane",
+            "position": "cm",
+            "age": 40,
+            "Playing": true,
+            "birthDate": "1980-05-21",
+            "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/Zinedine%20Zidane.jpg" ,
+            "rating": 84,
+            "trophies": ["FIFA-Worldcup"],
+            "BirthPlace": "France" ,
+            "team": {
+                "id": "t-009",
+                "name": "Manchester United",
+                "Manager": "Erik ten Hag",
+                "teamLogoUrl": "",
+                "createDate": "1875-02-13",
+                "League": "Premier League"
+                }
+        },
+
+        {
+            "id": "p-010",
+            "name": " Johan Cruijff ",
+            "position": " rw",
+            "age": 31,
+            "Playing": true,
+            "birthDate": "1999-04-25",
+            "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/Johan%20Cruijff%20.jpg" ,
+            "rating": 81,
+            "trophies": ["FIFA-Worldcup"],
+            "BirthPlace": "Netherlands" ,
+            "team": {
+                "id": "t-010",
+                "name": "Liverpool",
+                "Manager": "Jürgen Klopp",
+                "teamLogoUrl": "",
+                "createDate": "1850-09-05",
+                "League": "Premier League"
+            }
+        }
+]
