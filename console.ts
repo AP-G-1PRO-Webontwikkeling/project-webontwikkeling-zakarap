@@ -58,7 +58,7 @@ function filterByID(player: Player[]) {
             console.log(player.team.manager)
             console.log(player.team.teamLogoUrl)
             console.log(player.team.createDate)
-            console.log(player.team.League)
+            console.log(player.team.league)
         }
     }
 }
