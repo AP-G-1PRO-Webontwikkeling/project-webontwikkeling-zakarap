@@ -2,7 +2,7 @@ import playerdata from "./players.json";
 import teamdata from "./teams.json";
 
 
-export const players: Player[]= playerdata;
+export const players: any[]= playerdata;
 export const teams: Team[] = teamdata;
 
 

@@ -1,6 +1,6 @@
 [
     {
-        "id": "t-001",
+        "id": "t01",
         "name": "Manchester City",
         "manager": "Josep Guardiola",
         "teamLogoUrl": "",
@@ -8,7 +8,7 @@
         "League": "Premier League"
     },
     {
-        "id": "t-002",
+        "id": "t02",
         "name": "Chelsea",
         "manager": "BOB Bobkes",
         "teamLogoUrl": "",
@@ -16,7 +16,7 @@
         "League": "Premier League"
     },
     {
-        "id": "t-003",
+        "id": "t03",
         "name": "Manchester United",
         "manager": "Erik ten Hag",
         "teamLogoUrl": "",
@@ -24,7 +24,7 @@
         "League": "Premier League"
     },
     {
-        "id": "t-004",
+        "id": "t04",
         "name": "Paris Saint Germain",
         "manager": "Luis Enrique",
         "teamLogoUrl": "",
@@ -32,7 +32,7 @@
         "League": "Ligue 1"
     },
     {
-        "id": "t-006",
+        "id": "t05",
         "name": "Liverpool",
         "manager": "Jürgen Klopp",
         "teamLogoUrl": "",
