@@ -9,12 +9,12 @@
             "birthDate": "1987-04-21",
             "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/Cristiano_Ronaldo.jpg" ,
             "rating": 89,
-            "trophies": ["FIFA-Worldcup"],
+            "trophies": ["FIFA-Worldcup","lj<sddvm"],
             "birthPlace": "Portugal" ,
             "team": {
                 "id": "t-001",
                 "name": "Manchester City",
-                "Manager": "Josep Guardiola",
+                "manager": "Josep Guardiola",
                 "teamLogoUrl": "",
                 "createDate": "1894-11-13",
                 "league": "Premier League"
@@ -35,7 +35,7 @@
             "team": {
                 "id": "t-002",
                 "name": "Chelsea",
-                "Manager": "BOB Bobkes",
+                "manager": "BOB Bobkes",
                 "teamLogoUrl": "",
                 "createDate": "1850-09-05",
                 "league": "Premier League"
@@ -56,7 +56,7 @@
             "team": {
                 "id": "t-003",
                 "name": "Manchester United",
-                "Manager": "Erik ten Hag",
+                "manager": "Erik ten Hag",
                 "teamLogoUrl": "",
                 "createDate": "1875-02-13",
                 "league": "Premier League"
@@ -77,7 +77,7 @@
             "team": {
                 "id": "t-004",
                 "name": "Paris Saint Germain",
-                "Manager": "Luis Enrique",
+                "manager": "Luis Enrique",
                 "teamLogoUrl": "",
                 "createDate": "1855-08-08",
                 "league": "Ligue 1"
@@ -98,7 +98,7 @@
             "team": {
                 "id": "t-005",
                 "name": "Manchester City",
-                "Manager": "Josep Guardiola",
+                "manager": "Josep Guardiola",
                 "teamLogoUrl": "",
                 "createDate": "1894-11-13",
                 "league": " Premier League"
@@ -119,7 +119,7 @@
             "team": {
                 "id": "t-006",
                 "name": "Liverpool",
-                "Manager": "Jürgen Klopp",
+                "manager": "Jürgen Klopp",
                 "teamLogoUrl": "",
                 "createDate": "1850-09-05",
                 "league": "Premier League"
@@ -140,7 +140,7 @@
             "team": {
                 "id": "t-007",
                 "name": "Chelsea",
-                "Manager": "BOB Bobkes",
+                "manager": "BOB Bobkes",
                 "teamLogoUrl": "",
                 "createDate": "1850-09-05",
                 "league": "Premier League"
@@ -161,7 +161,7 @@
             "team": {
                 "id": "t-008",
                 "name": "Paris Saint Germain",
-                "Manager": "Luis Enrique",
+                "manager": "Luis Enrique",
                 "teamLogoUrl": "",
                 "createDate": "1855-08-08",
                 "league": "Ligue 1"
@@ -182,7 +182,7 @@
             "team": {
                 "id": "t-009",
                 "name": "Manchester United",
-                "Manager": "Erik ten Hag",
+                "manager": "Erik ten Hag",
                 "teamLogoUrl": "",
                 "createDate": "1875-02-13",
                 "league": "Premier League"
@@ -203,7 +203,7 @@
             "team": {
                 "id": "t-010",
                 "name": "Liverpool",
-                "Manager": "Jürgen Klopp",
+                "manager": "Jürgen Klopp",
                 "teamLogoUrl": "",
                 "createDate": "1850-09-05",
                 "league": "Premier League"

@@ -1,5 +1,5 @@
 import * as readline from 'readline-sync';
-import { players, teams } from "./interfaces.ts";
+import { Player, Team } from "./interfaces";
 import { exit } from 'process';
 
 
@@ -13,18 +13,9 @@ console.log("3. Sluit")
 
 let choice: number = Number(readline.question("Wat wil je doen?"))
 
-switch(choice){
 
-    case 1: showData(players,teams);
-        break;
 
-    case 2: filterByID(players);
-
-    case 3: exit;
-
-}
-
-function showData(players,teams){
+function showData(players: Player[],teams: Team[]){
 
     for(let player of players){
         console.log(player.name,player.id )
@@ -32,7 +23,7 @@ function showData(players,teams){
 
 }
 
-function filterByID(players) {
+function filterByID(players: Player[]) {
     for(let player of players){
         console.log(player.name )
         console.log(player.id)
@@ -46,9 +37,21 @@ function filterByID(players) {
         console.log(player.birthPlace)
         console.log(player.team.id)
         console.log(player.team.name)
-        console.log(player.team.Manager)
+        console.log(player.team.manager)
         console.log(player.team.teamLogoUrl)
         console.log(player.team.createDate)
-        console.log(player.team.league)
+        console.log(player.team.League)
     }
+}
+
+
+switch(choice){
+    
+    case 1: showData(players,teams);
+        break;
+
+    case 2: filterByID(players );
+
+    case 3: exit;
+
 }
