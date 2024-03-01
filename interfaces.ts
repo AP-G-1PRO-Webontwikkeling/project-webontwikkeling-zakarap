@@ -8,7 +8,8 @@ interface Player {
             imageUrl: string ,
             rating: number,
             trophies: string[],
-            BirthPlace: string ,
+            birthPlace: string ,
+            eam:
             
 }
 

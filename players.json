@@ -10,14 +10,14 @@
             "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/Cristiano_Ronaldo.jpg" ,
             "rating": 89,
             "trophies": ["FIFA-Worldcup"],
-            "BirthPlace": "Portugal" ,
+            "birthPlace": "Portugal" ,
             "team": {
                 "id": "t-001",
                 "name": "Manchester City",
                 "Manager": "Josep Guardiola",
                 "teamLogoUrl": "",
                 "createDate": "1894-11-13",
-                "League": "Premier League"
+                "league": "Premier League"
             }
         },
 
@@ -31,14 +31,14 @@
             "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/maradona.jpg" ,
             "rating": 92,
             "trophies": ["FIFA-Worldcup"],
-            "BirthPlace": "Argentine" ,
+            "birthPlace": "Argentine" ,
             "team": {
                 "id": "t-002",
                 "name": "Chelsea",
                 "Manager": "BOB Bobkes",
                 "teamLogoUrl": "",
                 "createDate": "1850-09-05",
-                "League": "Premier League"
+                "league": "Premier League"
                 }
         },
 
@@ -52,14 +52,14 @@
             "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/Romario.jpg" ,
             "rating": 86,
             "trophies": ["FIFA-Worldcup"],
-            "BirthPlace": "Brazil" ,
+            "birthPlace": "Brazil" ,
             "team": {
                 "id": "t-003",
                 "name": "Manchester United",
                 "Manager": "Erik ten Hag",
                 "teamLogoUrl": "",
                 "createDate": "1875-02-13",
-                "League": "Premier League"
+                "league": "Premier League"
                 }
         },
         
@@ -73,14 +73,14 @@
             "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/pele.jpg" ,
             "rating": 93,
             "trophies": ["FIFA-Worldcup"],
-            "BirthPlace": "Brazil" ,
+            "birthPlace": "Brazil" ,
             "team": {
                 "id": "t-004",
                 "name": "Paris Saint Germain",
                 "Manager": "Luis Enrique",
                 "teamLogoUrl": "",
                 "createDate": "1855-08-08",
-                "League": "Ligue 1"
+                "league": "Ligue 1"
             }
         },
         
@@ -94,14 +94,14 @@
             "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/haaland.jpg" ,
             "rating": 90,
             "trophies": ["FIFA-Worldcup"],
-            "BirthPlace": "Sweden" ,
+            "birthPlace": "Sweden" ,
             "team": {
                 "id": "t-005",
                 "name": "Manchester City",
                 "Manager": "Josep Guardiola",
                 "teamLogoUrl": "",
                 "createDate": "1894-11-13",
-                "League": " Premier League"
+                "league": " Premier League"
             }
         },
 
@@ -115,14 +115,14 @@
             "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/salah.jpg" ,
             "rating": 91,
             "trophies": ["FIFA-Worldcup"],
-            "BirthPlace": "Egypt" ,
+            "birthPlace": "Egypt" ,
             "team": {
                 "id": "t-006",
                 "name": "Liverpool",
                 "Manager": "Jürgen Klopp",
                 "teamLogoUrl": "",
                 "createDate": "1850-09-05",
-                "League": "Premier League"
+                "league": "Premier League"
             }
         },
 
@@ -136,14 +136,14 @@
             "imageUrl":"https://github.com/zakarap/Webontwikkeling-images/blob/main/Jorginho%20.jpg"  ,
             "rating": 85,
             "trophies": ["FIFA-Worldcup"],
-            "BirthPlace": "Brazil" ,
+            "birthPlace": "Brazil" ,
             "team": {
                 "id": "t-007",
                 "name": "Chelsea",
                 "Manager": "BOB Bobkes",
                 "teamLogoUrl": "",
                 "createDate": "1850-09-05",
-                "League": "Premier League"
+                "league": "Premier League"
                 }
         },
         
@@ -157,14 +157,14 @@
             "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/Lionel%20Messi.jpg" ,
             "rating": 94,
             "trophies": ["FIFA-Worldcup"],
-            "BirthPlace": "Argentine" ,
+            "birthPlace": "Argentine" ,
             "team": {
                 "id": "t-008",
                 "name": "Paris Saint Germain",
                 "Manager": "Luis Enrique",
                 "teamLogoUrl": "",
                 "createDate": "1855-08-08",
-                "League": "Ligue 1"
+                "league": "Ligue 1"
             }
         },
 
@@ -178,14 +178,14 @@
             "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/Zinedine%20Zidane.jpg" ,
             "rating": 84,
             "trophies": ["FIFA-Worldcup"],
-            "BirthPlace": "France" ,
+            "birthPlace": "France" ,
             "team": {
                 "id": "t-009",
                 "name": "Manchester United",
                 "Manager": "Erik ten Hag",
                 "teamLogoUrl": "",
                 "createDate": "1875-02-13",
-                "League": "Premier League"
+                "league": "Premier League"
                 }
         },
 
@@ -199,14 +199,14 @@
             "imageUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/Johan%20Cruijff%20.jpg" ,
             "rating": 81,
             "trophies": ["FIFA-Worldcup"],
-            "BirthPlace": "Netherlands" ,
+            "birthPlace": "Netherlands" ,
             "team": {
                 "id": "t-010",
                 "name": "Liverpool",
                 "Manager": "Jürgen Klopp",
                 "teamLogoUrl": "",
                 "createDate": "1850-09-05",
-                "League": "Premier League"
+                "league": "Premier League"
             }
         }
 ]
