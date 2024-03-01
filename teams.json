@@ -3,7 +3,7 @@
         "id": "t01",
         "name": "Manchester City",
         "manager": "Josep Guardiola",
-        "teamLogoUrl": "",
+        "teamLogoUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/Manchester%20City.png",
         "createDate": "1894-11-13",
         "League": "Premier League"
     },
@@ -11,7 +11,7 @@
         "id": "t02",
         "name": "Chelsea",
         "manager": "BOB Bobkes",
-        "teamLogoUrl": "",
+        "teamLogoUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/Chelsea.png",
         "createDate": "1850-09-05",
         "League": "Premier League"
     },
@@ -19,7 +19,7 @@
         "id": "t03",
         "name": "Manchester United",
         "manager": "Erik ten Hag",
-        "teamLogoUrl": "",
+        "teamLogoUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/Manchester%20United.png",
         "createDate": "1875-02-13",
         "League": "Premier League"
     },
@@ -27,7 +27,7 @@
         "id": "t04",
         "name": "Paris Saint Germain",
         "manager": "Luis Enrique",
-        "teamLogoUrl": "",
+        "teamLogoUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/psg.png",
         "createDate": "1855-08-08",
         "League": "Ligue 1"
     },
@@ -35,7 +35,7 @@
         "id": "t05",
         "name": "Liverpool",
         "manager": "Jürgen Klopp",
-        "teamLogoUrl": "",
+        "teamLogoUrl": "https://github.com/zakarap/Webontwikkeling-images/blob/main/Liverpool.png",
         "createDate": "1850-09-05",
         "League": "Premier League"
     }
