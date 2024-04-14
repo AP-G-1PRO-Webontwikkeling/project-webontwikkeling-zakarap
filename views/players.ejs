@@ -6,7 +6,7 @@
   <section class="row d-flex flex-row mb-3">
       <article class="card">
           <img src="<%= player.imageUrl %>" class="card-img-top">
-          <h5 class="card-title"><%= player.name %></h5>
+          <h5 class=" card-title"> <a class="name-title" href="/detail/<%= player.id %>"> <%= player.name %> </a></h5>
           <ul>
             <li><%= player.position  %></li>
             <li><%= player.age %></li>

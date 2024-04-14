@@ -11,15 +11,15 @@
       <li class="list-group-item">Active: <%= player.playing %> </li>
       <li class="list-group-item">Date of birth:<%= player.birthDate %></li>
       <li class="list-group-item">Rating:<%= player.rating %></li>
-      <li class="list-group-item">Trophies earned:<%= player.trophies %></li>
-      <li class="list-group-item">Place of birth<%= player.birthPlace %></li>
+      <li class="list-group-item">Trophies earned: <%= player.trophies %></li>
+      <li class="list-group-item">Place of birth: <%= player.birthPlace %></li>
     </ul>
     <div class="card-body">
       <ul class="list-group list-group-flush">
         <h6 class="card-title"> Team</h6>
         <a href="/team/<%= player.team.id %>"" class="card-link"><%= player.team.name %></a>
         <li class="list-group-item">Manager: <%= player.team.manager  %></li>
-        <li class="list-group-item">League: <%= player.team.league %> </li>
+        <li class="list-group-item">League:<%= player.team.league %></li>
       </ul>
     </div>
  </section>
