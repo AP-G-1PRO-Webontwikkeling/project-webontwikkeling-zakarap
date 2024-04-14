@@ -1,0 +1,35 @@
+<%- include("partials/header") %>
+
+<form action="/filter" method="GET" class="d-flex" role="search">
+  <input name="query" class="form-control me-2" type="search" placeholder="Search" >
+  <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+
+<table class="table">
+  <thead class="table-dark" >
+    <tr>
+      <th scope="col"><a href="">Name</a></th>
+      <th scope="col"><a href="">Position</a></th>
+      <th scope="col"><a href="">BirtDate </a></th>
+      <th scope="col"><a href="">age</a></th>
+      <th scope="col"><a href="">playing</a></th>
+    </tr>
+  </thead>
+  
+  <tbody class="table-group-divider">
+    <tr>
+
+<% for(let player of players) { %>
+
+        <th scope="row"><img src= "<%= player.imageUrl %>" alt="Image"> <a class="names" href="/detail/<%= player.id %>"><%= player.name %></a> </th>
+        <td><%= player.position %></td>
+        <td><%= player.birthDate %></td>
+        <td><%= player.age %></td>
+        <td><%= player.playing%></td>
+      </tr>
+<% } %>
+
+</table>
+<br>
+
+<%- include("partials/footer") %>

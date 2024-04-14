@@ -1,0 +1,56 @@
+
+body{
+    box-sizing: border-box;
+}
+.nav-link:hover{
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+.form-control, .btn-outline-success{
+   border: 1px solid black;
+}
+.btn{
+    color: black;
+}
+.btn:hover{
+    background-color: blue;
+}
+.d-flex{
+    width: 30%;
+    margin: 1rem;
+}
+th > a{
+    text-decoration: none;
+    color: white;
+}
+.names{
+    color: black;
+}
+th > a:hover{
+    color: blue;
+}
+
+
+
+
+/*----players-----*/
+.row{    
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    margin: 1rem;
+}
+
+
+
+/*------detail-----*/
+
+.list-group > a{
+    margin-left: 1rem;
+}
+
+section{
+    margin-left: 50%;
+}

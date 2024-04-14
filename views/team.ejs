@@ -1,0 +1,18 @@
+
+<%- include("partials/header") %>
+
+
+<div class="card" style="width: 18rem;">
+    <img src="<%= player.teamLogoUrl %> " class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"> <%= player.team.name %></h5>
+      <p class="card-text">age: <%= player.team.manager %></p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Createdate: <%= player.team.createDate  %></li>
+      <li class="list-group-item">League: <%= player.team.league %> </li>
+    </ul>
+  </div>
+
+  
+<%- include("partials/footer") %>

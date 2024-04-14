@@ -1,0 +1,30 @@
+
+<%- include("partials/header") %>
+<table class="table">
+  <thead class="table-dark" >
+    <tr>
+      <th scope="col"><a href="">Name</a></th>
+      <th scope="col"><a href="">Manager</a></th>
+      <th scope="col"><a href="">Date of creation </a></th>
+      <th scope="col"><a href="">League</a></th>
+    </tr>
+  </thead>
+  
+  <tbody class="table-group-divider">
+    <tr>
+
+<% for(let player of players) { %>
+
+        <th scope="row"><img src= "<%= player.team.teamLogoUrl %>" alt="Image"> <a class="names" href="/team/<%= player.team.id %>"><%= player.team.name %></a> </th>
+        <td><%= player.team.manager %></td>
+        <td><%= player.team.createDate %></td>
+        <td><%= player.team.League %></td>
+      </tr>
+<% } %>
+
+
+
+
+
+</table>
+<%- include("partials/footer") %>

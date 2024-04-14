@@ -1,0 +1,24 @@
+
+<%- include("partials/header") %>
+
+<% for(let player of players) { %>
+
+  <section class="row d-flex flex-row mb-3">
+      <article class="card">
+          <img src="<%= player.imageUrl %>" class="card-img-top">
+          <h5 class="card-title"><%= player.name %></h5>
+          <ul>
+            <li><%= player.position  %></li>
+            <li><%= player.age %></li>
+            <li><%= player.birthDate %></li>
+            <li><%= player.rating %></li>
+
+            <li><%= player.team.name %></li>
+          </ul>
+        </article>  
+  </section>
+<% } %>
+
+
+
+<%- include("partials/footer") %>
