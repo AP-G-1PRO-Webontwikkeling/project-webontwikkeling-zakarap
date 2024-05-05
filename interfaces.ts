@@ -1,10 +1,9 @@
-import playerdata from "./players.json";
+/*import playerdata from "./players.json";
 import teamdata from "./teams.json";
-
 
 export const players: any[]= playerdata;
 export const teams: Team[] = teamdata;
-
+*/
 
 export interface Player{
             id: string;
@@ -22,12 +21,10 @@ export interface Player{
 }
 
 export interface Team{
-    
         id: string;
         name: string;
         manager: string;
         teamLogoUrl: string;
         createDate: string;
         League: string;
-    
 }
