@@ -1,6 +1,7 @@
-import { Collection, MongoClient } from "mongodb";
+import { Collection, MongoClient, ObjectId } from "mongodb";
 import {Player, Team } from "./interfaces";
 import dotenv from "dotenv"
+import { name } from "ejs";
 
 require('dotenv').config()
 
@@ -9,6 +10,22 @@ export const client = new MongoClient(MONGO_URI);
 export const playercollection: Collection<Player> = client.db("zakaria-project").collection<Player>("players");
 
 
+export async function updatePlayerPos(Pos: string, newPos:string) {
+
+    let player = playercollection.findOne<Player>({name: Pos});
+
+    return await playercollection.updateOne({ player }, { $set: {position: newPos}}  );
+
+}
+
+
+export async function updatePlayerAge(ageInput : number,name:string){
+
+    let player = playercollection.findOne<Player>({name: name});
+    return await playercollection.updateOne({ player }, { $set: {age: ageInput}}  );
+
+
+}
 
 
 export async function connect() {

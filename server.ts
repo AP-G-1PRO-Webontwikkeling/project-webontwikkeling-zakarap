@@ -1,7 +1,7 @@
 import express from "express";
 import ejs from "ejs";
 import {Player, Team } from "./interfaces";
-import { connect, getPlayers, checkDB } from "./database";
+import { connect, getPlayers, checkDB,updatePlayerPos, updatePlayerAge } from "./database";
 import dotenv from "dotenv";
 
 
@@ -20,6 +20,40 @@ app.get("/", (req, res) => {
   res.render("index", {players: players});
 });
 
+
+
+
+app.post('/updateAge', (req, res) => {
+
+  const {ageInput,name}  = req.body;
+  updatePlayerAge(ageInput,name)  .then(() => {
+    console.log("gelukt")
+})
+
+  
+});
+
+app.get('/updateAge', (req, res) => {
+  res.render('index', players);
+});
+
+
+app.post('/updatePos', (req, res) => {
+  const Pos  = req.body.position;
+  const newPos = req.body.position.option;
+  
+  let update = updatePlayerPos(Pos,newPos)
+  .then(() => {
+      res.send('Player position updated successfully!');
+      
+      console.log("gelukt")
+  })
+
+  res.render('index', { update, players });
+});
+
+
+
 app.get("/filter", (req, res) => {
   const queryParam = req.query.query;
   const query = Array.isArray(queryParam) ? queryParam[0] : queryParam;
@@ -33,9 +67,16 @@ app.get("/filter", (req, res) => {
   res.render('index', { players: filtered, query });
 });
 
+
+
+
+
 app.get("/players", (req, res) => {
   res.render("players", {players: players});
 });
+
+
+
 
 app.get("/detail/:id", (req, res) => {
   const id = req.params.id;
@@ -43,11 +84,17 @@ app.get("/detail/:id", (req, res) => {
   res.render('detail', { player });
 });
 
+
+
+
 app.get("/team/:id", (req, res) => {
   const id = req.params.id;
   const player = players.find(obj => obj.team.id ===id);
   res.render('team', { player });
 });
+
+
+
 
 app.get("/teams", (req, res) => {
 

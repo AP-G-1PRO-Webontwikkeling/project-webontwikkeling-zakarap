@@ -29,8 +29,12 @@ th > a{
 th > a:hover{
     color: blue;
 }
-
-
+#position{
+    width: 20%;
+}
+#ageInput{
+    width: 7%;
+}
 
 
 /*----players-----*/

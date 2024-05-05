@@ -21,10 +21,30 @@
 
 <% for(let player of players) { %>
 
-        <th scope="row"><img src= "<%= player.imageUrl %>" alt="Image"> <a class="names" href="/detail/<%= player.id %>"><%= player.name %></a> </th>
-        <td><%= player.position %></td>
+        <th scope="row"><img src= "<%= player.imageUrl %>" alt="Image"> <a id="name" class="names" href="/detail/<%= player.id %>"><%= player.name %></a> </th>
+        
+        <td>
+          <form method="post" action="/updatePos">
+            <select name="position" id="position">
+              <option  value=<%= player.position %> > <%= player.position %> </option>
+              <option  value="cb">cb</option>
+              <option  value="cm">cm</option>
+              <option  value="rw">rw</option>
+              <option  value="lw">lw</option>
+              <option  value="st">st</option>
+            </select>
+            <button type="submit">edit</button>
+          </form>
+        </td>
+  
         <td><%= player.birthDate %></td>
-        <td><%= player.age %></td>
+        <td>
+          <form method="post" action="/updateAge">
+            <%= player.age %>
+            <input id="ageInput" type="text" > 
+            <button  type="submit">edit</button>
+          </form>
+        </td>
         <td><%= player.playing%></td>
       </tr>
 <% } %>
