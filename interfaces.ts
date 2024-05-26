@@ -28,3 +28,12 @@ export interface Team{
         createDate: string;
         League: string;
 }
+
+
+export interface User {
+        _id?: Object,
+        name: string,
+        password?: string
+        role: "ADMIN" | "USER";    
+}
+    

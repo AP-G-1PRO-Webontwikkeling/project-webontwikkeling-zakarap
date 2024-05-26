@@ -6,6 +6,141 @@ body{
     background-color: rgb(26, 26, 26);
     color: white;
 }
+
+
+
+/* --------------------------- landingspagina -----------------------------*/
+
+.account_dropdown_button i {
+    display: none;
+}
+
+#account_buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 3rem;
+}
+
+
+#login_popup{
+    background: rgba(0, 0, 0, 0.6);
+    min-width: 100vw;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: -50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#signin_popup {
+    
+    background: rgba(0, 0, 0, 0.6);
+    min-width: 100vw;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: -50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#login_content {
+    height: 400px;
+    width: 500px;
+    background: #101014;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    padding-right: 0;
+    border-radius: 1rem;
+}
+
+#signin_content {
+    height: 450px;
+    width: 500px;
+    background: #101014;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    padding-right: 0;
+    border-radius: 1rem;
+}
+
+#login_content h3, #signin_content h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    color: white;
+    border-bottom: 1px solid #848484;
+}
+
+.close_button {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+#login_content fieldset, #signin_content fieldset{
+    width: 90%;
+}
+
+#login_content fieldset input, #signin_content fieldset input {
+    margin: 0.7rem 0 2rem 0;
+    width: 100%;
+    background-color: #3a3a3a;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    color: rgb(169, 169, 169);
+}
+
+
+#login_content label, #signin_content label {
+    font-size: 0.9rem;
+    margin-left: 0.3rem;
+    color: white;
+}
+
+#login_content a {
+    padding-left: 0.2rem;
+    position: relative;
+    bottom: 1.5rem;
+    color: rgb(63, 63, 254);
+    text-decoration: underline;
+}
+
+#popup_login_button, #popup_signin_button {
+    background-color: #3a3a3a;
+    border-radius: 0.5rem;
+    padding: 0.6rem;    
+    margin-left: 72%;
+    margin-right: 20%;
+    border-color: #000000;
+    border-style: solid;
+}
+
+#popup_signin_button {
+    margin-left: 69%;
+}
+
+
+
+
+
+
+
 .form-control, .btn-outline-success{
    border: 1px solid black;
 }

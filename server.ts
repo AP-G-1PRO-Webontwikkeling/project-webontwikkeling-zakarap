@@ -1,36 +1,88 @@
 import express from "express";
 import ejs from "ejs";
-import {Player, Team } from "./interfaces";
-import { connect, getPlayers, checkDB,updatePlayerPos, updatePlayerAge } from "./database";
+import {Player, Team, User } from "./interfaces";
+import { connect, getPlayers, checkDB,updatePlayerPos, updatePlayerAge,registerUser,createInitialUser, login } from "./database";
 import dotenv from "dotenv";
+import session  from "./session";
+import { secureMiddleware } from "./secureMiddleware";
+
 
 
 const app = express();
 app.use(express.static("public"));    
 app.use(express.json({ limit: "1mb" }));
-app.use(express.urlencoded({ extended:true}))
+app.use(express.urlencoded({ extended:true}));
+app.use(session);
 
 app.set("view engine", "ejs"); 
 app.set("port", 3001);
 
 let players: Player[] = [];
+let loggedin;
+
+
+
+app.get("/", secureMiddleware, async(req, res) => {
+    res.render("index");
+});
+
+app.post("/", async (req, res) => {
+  const username_signin: string = req.body.username_signin;
+  const password_signin: string = req.body.password_signin;
+  console.log(username_signin);
+  console.log(password_signin);
+      try {
+          await registerUser(username_signin, password_signin);
+          loggedin = true;
+          res.redirect("/");
+      }
+      catch {
+          res.redirect("/");
+      }
+});
+
+app.post("/login", async (req, res, next) => {
+  if (req.body.username) {
+      const username: string = req.body.username;
+      const password: string = req.body.password;
+      try {
+          let user: User | undefined =  await login(username, password);  
+          console.log(user);
+          if (user) {
+              console.log("logged in")
+              delete user.password;
+              req.session.user = user;
+              loggedin = true;
+              res.redirect("/");
+          }
+      } catch (e: any) {
+        console.log("geen user")
+          res.redirect("/");
+      }
+  }
+  else {
+      next();
+  }
+});
+
+app.post("/logout", async(req, res) => {
+  req.session.destroy(() =>{
+      res.redirect("/");
+      console.log("logged out")
+  });
+})
 
 
 app.get("/", (req, res) => {
   res.render("index", {players: players});
 });
 
-
-
-
 app.post('/updateAge', (req, res) => {
 
   const {ageInput,name}  = req.body;
   updatePlayerAge(ageInput,name)  .then(() => {
     console.log("gelukt")
-})
-
-  
+  })
 });
 
 app.get('/updateAge', (req, res) => {
@@ -107,6 +159,7 @@ app.listen(app.get("port"), async () => {
 
       await connect();
       checkDB();
+      createInitialUser();
       players = await getPlayers();
       console.log(`Server is running on port ${app.get("port")}`);
   });

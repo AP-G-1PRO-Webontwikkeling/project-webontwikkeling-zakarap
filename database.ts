@@ -1,13 +1,16 @@
 import { Collection, MongoClient, ObjectId } from "mongodb";
-import {Player, Team } from "./interfaces";
+import {Player, Team, User } from "./interfaces";
 import dotenv from "dotenv"
 import { name } from "ejs";
 
+import bcrypt from "bcrypt";
+
 require('dotenv').config()
 
-const MONGO_URI = process.env.MONGO_URI ?? "mongodb://localhost:27017";
+export const MONGO_URI = process.env.MONGO_URI ?? "mongodb://localhost:27017";
 export const client = new MongoClient(MONGO_URI);
 export const playercollection: Collection<Player> = client.db("zakaria-project").collection<Player>("players");
+export const userCollection = client.db("zakaria-project").collection<User>("users");
 
 
 export async function updatePlayerPos(Pos: string, newPos:string) {
@@ -48,8 +51,6 @@ export async function exit() {
     process.exit(0);
 }
 
-
-
 export  async function checkDB() {
     const collectionCount = await playercollection.countDocuments();
     if (collectionCount > 0) {
@@ -77,3 +78,45 @@ export async function getPlayers() {
 }
 
 
+const saltRounds: number = 10;
+
+export async function registerUser(name: string, password: string) {
+    console.log(await bcrypt.hash(password, saltRounds));
+    await userCollection.insertOne({
+        name: name,
+        password: await bcrypt.hash(password, saltRounds),
+        role: "USER"
+    })
+}
+
+export async function login(email: string, password: string) {
+    if (email === "" || password === "") {
+        throw new Error("Email and password required");
+    }
+    let user : User | null = await userCollection.findOne<User>({email: email});
+    if (user) {
+        if (await bcrypt.compare(password, user.password!)) {
+            return user;
+        } else {
+            throw new Error("Password incorrect");
+        }
+    } else {
+        throw new Error("User not found");
+    }
+}
+
+export async function createInitialUser() {
+    if (await userCollection.countDocuments() > 0) {
+        return;
+    }
+    let email : string | undefined = process.env.ADMIN_EMAIL;
+    let password : string | undefined = process.env.ADMIN_PASSWORD;
+    if (email === undefined || password === undefined) {
+        throw new Error("ADMIN_EMAIL and ADMIN_PASSWORD must be set in environment");
+    }
+    await userCollection.insertOne({
+        name: name,
+        password: await bcrypt.hash(password, saltRounds),
+        role: "ADMIN"
+    });
+}
