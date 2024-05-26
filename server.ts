@@ -4,8 +4,6 @@ import {Player, Team, User } from "./interfaces";
 import { connect, getPlayers, checkDB,updatePlayerPos, updatePlayerAge,registerUser,createInitialUser, login } from "./database";
 import dotenv from "dotenv";
 import session  from "./session";
-import { secureMiddleware } from "./secureMiddleware";
-
 
 
 const app = express();
@@ -20,11 +18,6 @@ app.set("port", 3001);
 let players: Player[] = [];
 let loggedin;
 
-
-
-app.get("/", secureMiddleware, async(req, res) => {
-    res.render("index");
-});
 
 app.post("/", async (req, res) => {
   const username_signin: string = req.body.username_signin;
